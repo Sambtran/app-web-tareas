@@ -8,5 +8,4 @@ para resetear esta memoria sin salir del navegador se ha añadido un boton al la
 
 
 Bugs conocidos
--1 cuando se usa el tick primero para negarlo y posteriormente para afrimarlo se elimina dicho div ** se deberia abstraer las funciones dedicadas a la creacion de 
-Ambos estados y refactorizar todo el proceso de creación
+-1 cuando se usa el tick primero para negarlo y posteriormente para afrimarlo se elimina dicho div ** se deberia abstraer las funciones dedicadas a la creacion de Ambos estados y refactorizar todo el proceso de creación
