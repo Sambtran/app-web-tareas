@@ -3,6 +3,8 @@ Hola esto es una pequeña aplicación web donde se expande sobre lo pedido en mi
 Caracteristicas:
 Este programa permite añadir texto como tareas para realizar, tanto con el boton de + como con la tecla enter
 tambien se añade un boton de tick para saber si la tarea esta finalizada o se ha abandonado*
+se ha codeado memoria para recordar todas las tareas añadidas durante la sesion del navegador,(para su uso fuera de esta sesion se deberian usar cookies como especifica el codigo)
+para resetear esta memoria sin salir del navegador se ha añadido un boton al lado de la barra de busqueda.
 
 
 Bugs conocidos
