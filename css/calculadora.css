@@ -1,0 +1,109 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+#frame{
+    position: absolute;
+    background-color: rgb(141, 141, 141);
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-rows: repeat(4,3fr);
+    border: 1px solid  lightcoral;
+    border-radius: 2em;
+    box-shadow: -12px -3px 5px 0px rgba(0,0,0,0.74);
+
+}
+#operadores{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+#operadores > div{
+    box-shadow: -2px 4px 40px 0px rgba(0,0,0,0.74);
+
+    border-radius: 1em;
+    padding: 0.5em 0em;
+    width: 40%;
+    background-color: white;
+    text-align: center;
+    margin: 0.4em 0;
+    transition: 0.1s ease-in-out;
+}
+#operadores>div:active{
+}
+#operadores>#ig{
+    transform: scale(1.4) translateY(20px);
+    background-color: yellowgreen;
+    transition: 0.2s ease-in-out;
+
+}
+#operadores>#ig:active{
+    transform: scale(0.2);
+}
+#num{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    height: 50%;
+    width: 80%;
+    background-color: white;
+}
+#numact{
+    width: 60%;
+    height: 100%;
+    background-color: aqua;
+}
+#numact>input{
+    width: 100%;
+    height: 100%;
+    font-size: 3rem;
+    outline: none;
+}
+#numact>input:active{
+    border: 1px solid red;
+}
+#numant{
+    width: 40%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.685);  
+}
+#res{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.5em;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+}
+#numant{
+    display: flex;
+    flex-flow: row wrap;
+    justify-self: space-between;
+    font-size: 0.7rem;
+}
+#resetear{
+    position: relative;
+    background-color: red;
+    width: 200px;
+    height: 50px;
+    color: black;
+    text-align: center;
+    border-radius: 20rem;
+    border: 1px solid black;
+    top: 50%;
+    left: 40%;
+    transition: 1s all ease-in-out;;
+}
+#resetear:hover{
+    transform: scale(1.3);
+    color: white;
+}

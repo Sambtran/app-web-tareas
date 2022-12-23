@@ -112,7 +112,7 @@ input{
     align-items: center;
 }
 #boton:active{
-    transform: scale(2);
+    transform: scale(0.7);
 }
 @keyframes circulo {
     from {
