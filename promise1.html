@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//promesa
+var promesa=new Promise(function(resolver, rechazar){
+// funcion que ejecuta cuando va bien
+ function ejec(){
+    resolver("tiempo concluido")
+}
+//funcion que ejecuta cuando va mal
+function ejec2(){
+    rechazar("tiempo va mal")
+}
+// contador principal
+ timeout = setTimeout(ejec, 10000);
+// contador que fuerza el error de la promesa (cambiar tiempo)
+ timeout = setTimeout(ejec2,20000);
+});
+//resolvemos promesa
+promesa.then(function(mensaje){document.write(mensaje);}).catch(function(mensaje){document.write(mensaje);});
+</script>
+</html>
